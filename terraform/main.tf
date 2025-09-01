@@ -13,6 +13,6 @@ module "aft_account_request" {
 
   change_management_parameters = {
     change_requested_by = "Terraform"
-    change_reason       = "Account provisioning"
+    change_reason       = "User${count.index} Account Provisioning"
   }
 }
