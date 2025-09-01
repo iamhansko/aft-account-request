@@ -11,14 +11,8 @@ module "aft_account_request" {
     ManagedOrganizationalUnit = "Root" # Root OU
   }
 
-  account_tags = {
-    ManagedBy = "AFT"
-  }
-
   change_management_parameters = {
     change_requested_by = "Terraform"
     change_reason       = "Account provisioning"
   }
-
-  account_customizations_name = "user${count.index}-custom"
 }
