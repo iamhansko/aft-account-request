@@ -8,7 +8,7 @@ module "aft_account_request" {
     SSOUserEmail              = "user${count.index}@example.com"
     SSOUserFirstName          = "AWS"
     SSOUserLastName           = "User${count.index}"
-    ManagedOrganizationalUnit = "Sandbox" # Sandbox OU
+    ManagedOrganizationalUnit = "Sandbox"
   }
 
   change_management_parameters = {
