@@ -3,9 +3,9 @@ module "aft_account_request" {
   count = 7
 
   control_tower_parameters = {
-    AccountName               = "user${count.index+1}"
-    AccountEmail              = "user${count.index}@example.com"
-    SSOUserEmail              = "user${count.index}@example.com"
+    AccountName               = "hyunsukouser20250901${count.index+1}"
+    AccountEmail              = "hyunsukouser20250901${count.index}@example.com"
+    SSOUserEmail              = "iamhansko@gmail.com"
     SSOUserFirstName          = "AWS"
     SSOUserLastName           = "User${count.index}"
     ManagedOrganizationalUnit = "Sandbox" # Sandbox OU
